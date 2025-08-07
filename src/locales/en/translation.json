@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "gallery": "Gallery",
+    "about": "About Me",
+    "contact": "Contact"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "home": {
+    "title": "Capturing Moments, Creating Memories",
+    "subtitle": "Welcome to my digital corner. I am a photographer passionate about capturing unique moments and telling stories through light. My work spans documentary, architecture, and landscape photography, always with an authentic and emotional approach.",
+    "gallery_title": "Gallery"
+  },
+  "about": {
+    "title": "About Me",
+    "p1": "Hi! I'm Oscar Durán, a photographer passionate about capturing beauty in everyday details. My journey in photography began over a decade ago, and since then, I haven't stopped exploring the world through my lens.",
+    "p2": "I specialize in documentary and landscape photography, always seeking the story hidden behind each scene. I believe a good photograph not only shows what something looks like, but how it feels.",
+    "p3": "This portfolio is a collection of moments that have moved me, and I hope they inspire you too."
+  },
+  "contact": {
+    "title": "Contact",
+    "p1": "Interested in collaborating or have a question about my work? I'd love to hear from you.",
+    "p2": "You can reach me via my email:",
+    "p3": "You can also follow me on my social media:"
+  },
+  "categories": {
+    "all": "All",
+    "documental": "Documentary",
+    "retrato": "Portrait",
+    "paisaje": "Landscape",
+    "arquitectura": "Architecture"
+  },
+  "photo_titles": {
+    "doc_1": "Noche de baile",
+    "doc_2": "Chicahual",
+    "doc_3": "Reagrupándose",
+    "doc_4": "El Apóstol",
+    "port_1": "Días de feria",
+    "port_2": "Sin título",
+    "port_3": "Japonesa en Kimono",
+    "port_4": "El Comanche",
+    "land_1": "El Mirador",
+    "land_2": "Camino al sol",
+    "land_3": "Torrente vital",
+    "land_4": "Colores de la mañana",
+    "land_5": "Arroyo Blanco",
+    "land_6": "La puesta de sol",
+    "arch_1": "Templo de la Purísima",
+    "arch_2": "Capilla del Ave María",
+    "arch_3": "Museo Espacio",
+    "arch_4": "Teatro Morelos",
+    "arch_5": "Templo de la Purísima",
+    "arch_6": "Templo de San Marcos",
+    "arch_7": "Casa de la cultura",
+    "arch_8": "PROFECO",
+    "arch_9": "Cúpula del Templo de San Antonio",
+    "arch_10": "Catedral de la Virgen de Asunción"
+  }    
+}
