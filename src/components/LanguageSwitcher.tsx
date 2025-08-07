@@ -19,7 +19,7 @@ const LanguageSwitcher: React.FC = () => {
         <button
           key={lang.code}
           onClick={() => changeLanguage(lang.code)}
-          className={`px-3 py-1 text-sm font-bold rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 focus:ring-offset-gray-900 ${
+          className={`px-3 py-1 text-xs font-bold rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 focus:ring-offset-gray-900 ${
             i18n.language.startsWith(lang.code) ? "bg-cyan-500 text-white" : "text-gray-300 hover:bg-gray-600"
           }`}
           aria-current={i18n.language.startsWith(lang.code) ? "page" : undefined}

@@ -66,7 +66,7 @@ const HomePage: React.FC = () => {
             <button
               key={category.id}
               onClick={() => setSelectedCategory(category.id)}
-              className={`px-4 py-2 rounded-md font-semibold text-white transition-colors duration-300 ${selectedCategory === category.id ? "bg-cyan-500" : "bg-gray-700 hover:bg-cyan-600"}`}
+              className={`px-4 py-2 rounded-md text-white transition-colors duration-300 ${selectedCategory === category.id ? "bg-cyan-500" : "bg-gray-700 hover:bg-cyan-600"}`}
             >
               {t(category.name)}
             </button>
