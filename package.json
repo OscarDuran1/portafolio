@@ -6,7 +6,8 @@
   "homepage": "https://oscarduran1.github.io/portafolio",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "generate-placeholders": "node scripts/generate-placeholders.mjs",
+    "build": "npm run generate-placeholders && tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
