@@ -74,10 +74,20 @@ const HomePage: React.FC = () => {
         </div>
 
         {/* Photo Grid */}
-        <motion.div layout className="grid grid-cols-2 md:grid-cols-4 auto-rows-[200px] gap-4 grid-flow-dense">
+        <motion.div layout className="columns-2 md:columns-3 lg:columns-4 gap-4">
           <AnimatePresence>
             {filteredPhotos.map((photo) => (
-              <PhotoThumbnail key={photo.id} photo={photo} onClick={handlePhotoClick} />
+              <motion.div
+                layout
+                key={photo.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.3 }}
+                className="mb-4 break-inside-avoid"
+              >
+                <PhotoThumbnail photo={photo} onClick={handlePhotoClick} />
+              </motion.div>
             ))}
           </AnimatePresence>
         </motion.div>
