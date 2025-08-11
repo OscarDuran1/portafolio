@@ -1,0 +1,380 @@
+[
+  {
+    "src": "img/documental/foto1.jpg",
+    "title": "photo_titles.doc_1",
+    "category": "documental",
+    "placeholderSrc": "placeholders/documental/foto1.jpg",
+    "id": 1,
+    "width": 1024,
+    "height": 741
+  },
+  {
+    "src": "img/documental/foto2.jpg",
+    "title": "photo_titles.doc_2",
+    "category": "documental",
+    "placeholderSrc": "placeholders/documental/foto2.jpg",
+    "id": 2,
+    "width": 857,
+    "height": 1024
+  },
+  {
+    "src": "img/documental/foto3.jpg",
+    "title": "photo_titles.doc_3",
+    "category": "documental",
+    "placeholderSrc": "placeholders/documental/foto3.jpg",
+    "id": 3,
+    "width": 1024,
+    "height": 707
+  },
+  {
+    "src": "img/documental/foto4.jpg",
+    "title": "photo_titles.doc_4",
+    "category": "documental",
+    "placeholderSrc": "placeholders/documental/foto4.jpg",
+    "id": 4,
+    "width": 267,
+    "height": 341
+  },
+  {
+    "src": "img/documental/foto5.jpg",
+    "title": "photo_titles.doc_5",
+    "category": "documental",
+    "placeholderSrc": "placeholders/documental/foto5.jpg",
+    "id": 5,
+    "width": 256,
+    "height": 171
+  },
+  {
+    "src": "img/documental/foto6.jpg",
+    "title": "photo_titles.doc_6",
+    "category": "documental",
+    "placeholderSrc": "placeholders/documental/foto6.jpg",
+    "id": 6,
+    "width": 1024,
+    "height": 683
+  },
+  {
+    "src": "img/documental/foto7.jpg",
+    "title": "photo_titles.doc_7",
+    "category": "documental",
+    "placeholderSrc": "placeholders/documental/foto7.jpg",
+    "id": 7,
+    "width": 197,
+    "height": 256
+  },
+  {
+    "src": "img/documental/foto8.jpg",
+    "title": "photo_titles.doc_8",
+    "category": "documental",
+    "placeholderSrc": "placeholders/documental/foto8.jpg",
+    "id": 8,
+    "width": 1024,
+    "height": 683
+  },
+  {
+    "src": "img/documental/foto9.jpg",
+    "title": "photo_titles.doc_9",
+    "category": "documental",
+    "placeholderSrc": "placeholders/documental/foto9.jpg",
+    "id": 9,
+    "width": 1024,
+    "height": 683
+  },
+  {
+    "src": "img/documental/foto10.jpg",
+    "title": "photo_titles.doc_10",
+    "category": "documental",
+    "placeholderSrc": "placeholders/documental/foto10.jpg",
+    "id": 10,
+    "width": 1023,
+    "height": 751
+  },
+  {
+    "src": "img/documental/foto11.jpg",
+    "title": "photo_titles.doc_11",
+    "category": "documental",
+    "placeholderSrc": "placeholders/documental/foto11.jpg",
+    "id": 11,
+    "width": 250,
+    "height": 341
+  },
+  {
+    "src": "img/documental/foto12.jpg",
+    "title": "photo_titles.doc_12",
+    "category": "documental",
+    "placeholderSrc": "placeholders/documental/foto12.jpg",
+    "id": 12,
+    "width": 1024,
+    "height": 683
+  },
+  {
+    "src": "img/retrato/foto1.jpg",
+    "title": "photo_titles.port_1",
+    "category": "retrato",
+    "placeholderSrc": "placeholders/retrato/foto1.jpg",
+    "id": 13,
+    "width": 273,
+    "height": 341
+  },
+  {
+    "src": "img/retrato/foto2.jpg",
+    "title": "photo_titles.port_2",
+    "category": "retrato",
+    "placeholderSrc": "placeholders/retrato/foto2.jpg",
+    "id": 14,
+    "width": 273,
+    "height": 341
+  },
+  {
+    "src": "img/retrato/foto3.jpg",
+    "title": "photo_titles.port_3",
+    "category": "retrato",
+    "placeholderSrc": "placeholders/retrato/foto3.jpg",
+    "id": 15,
+    "width": 819,
+    "height": 1024
+  },
+  {
+    "src": "img/retrato/foto4.jpg",
+    "title": "photo_titles.port_4",
+    "category": "retrato",
+    "placeholderSrc": "placeholders/retrato/foto4.jpg",
+    "id": 16,
+    "width": 819,
+    "height": 1024
+  },
+  {
+    "src": "img/retrato/foto5.jpg",
+    "title": "photo_titles.port_5",
+    "category": "retrato",
+    "placeholderSrc": "placeholders/retrato/foto5.jpg",
+    "id": 17,
+    "width": 819,
+    "height": 1024
+  },
+  {
+    "src": "img/retrato/foto6.jpg",
+    "title": "photo_titles.port_6",
+    "category": "retrato",
+    "placeholderSrc": "placeholders/retrato/foto6.jpg",
+    "id": 18,
+    "width": 273,
+    "height": 341
+  },
+  {
+    "src": "img/retrato/foto7.jpg",
+    "title": "photo_titles.port_7",
+    "category": "retrato",
+    "placeholderSrc": "placeholders/retrato/foto7.jpg",
+    "id": 19,
+    "width": 655,
+    "height": 1023
+  },
+  {
+    "src": "img/retrato/foto8.jpg",
+    "title": "photo_titles.port_8",
+    "category": "retrato",
+    "placeholderSrc": "placeholders/retrato/foto8.jpg",
+    "id": 20,
+    "width": 749,
+    "height": 1024
+  },
+  {
+    "src": "img/retrato/foto9.jpg",
+    "title": "photo_titles.port_9",
+    "category": "retrato",
+    "placeholderSrc": "placeholders/retrato/foto9.jpg",
+    "id": 21,
+    "width": 273,
+    "height": 341
+  },
+  {
+    "src": "img/retrato/foto10.jpg",
+    "title": "photo_titles.port_10",
+    "category": "retrato",
+    "placeholderSrc": "placeholders/retrato/foto10.jpg",
+    "id": 22,
+    "width": 1024,
+    "height": 683
+  },
+  {
+    "src": "img/paisaje/foto1.jpg",
+    "title": "photo_titles.land_1",
+    "category": "paisaje",
+    "placeholderSrc": "placeholders/paisaje/foto1.jpg",
+    "id": 23,
+    "width": 1024,
+    "height": 683
+  },
+  {
+    "src": "img/paisaje/foto2.jpg",
+    "title": "photo_titles.land_2",
+    "category": "paisaje",
+    "placeholderSrc": "placeholders/paisaje/foto2.jpg",
+    "id": 24,
+    "width": 1024,
+    "height": 683
+  },
+  {
+    "src": "img/paisaje/foto3.jpg",
+    "title": "photo_titles.land_3",
+    "category": "paisaje",
+    "placeholderSrc": "placeholders/paisaje/foto3.jpg",
+    "id": 25,
+    "width": 1024,
+    "height": 683
+  },
+  {
+    "src": "img/paisaje/foto4.jpg",
+    "title": "photo_titles.land_4",
+    "category": "paisaje",
+    "placeholderSrc": "placeholders/paisaje/foto4.jpg",
+    "id": 26,
+    "width": 32,
+    "height": 21
+  },
+  {
+    "src": "img/paisaje/foto5.jpg",
+    "title": "photo_titles.land_5",
+    "category": "paisaje",
+    "placeholderSrc": "placeholders/paisaje/foto5.jpg",
+    "id": 27,
+    "width": 1024,
+    "height": 683
+  },
+  {
+    "src": "img/paisaje/foto6.jpg",
+    "title": "photo_titles.land_6",
+    "category": "paisaje",
+    "placeholderSrc": "placeholders/paisaje/foto6.jpg",
+    "id": 28,
+    "width": 1024,
+    "height": 683
+  },
+  {
+    "src": "img/paisaje/foto7.jpg",
+    "title": "photo_titles.land_7",
+    "category": "paisaje",
+    "placeholderSrc": "placeholders/paisaje/foto7.jpg",
+    "id": 29,
+    "width": 1024,
+    "height": 683
+  },
+  {
+    "src": "img/paisaje/foto8.jpg",
+    "title": "photo_titles.land_8",
+    "category": "paisaje",
+    "placeholderSrc": "placeholders/paisaje/foto8.jpg",
+    "id": 30,
+    "width": 1024,
+    "height": 683
+  },
+  {
+    "src": "img/paisaje/foto9.jpg",
+    "title": "photo_titles.land_9",
+    "category": "paisaje",
+    "placeholderSrc": "placeholders/paisaje/foto9.jpg",
+    "id": 31,
+    "width": 1024,
+    "height": 683
+  },
+  {
+    "src": "img/paisaje/foto10.jpg",
+    "title": "photo_titles.land_10",
+    "category": "paisaje",
+    "placeholderSrc": "placeholders/paisaje/foto10.jpg",
+    "id": 32,
+    "width": 1024,
+    "height": 683
+  },
+  {
+    "src": "img/arquitectura/foto1.jpg",
+    "title": "photo_titles.arch_1",
+    "category": "arquitectura",
+    "placeholderSrc": "placeholders/arquitectura/foto1.jpg",
+    "id": 33,
+    "width": 683,
+    "height": 1024
+  },
+  {
+    "src": "img/arquitectura/foto2.jpg",
+    "title": "photo_titles.arch_2",
+    "category": "arquitectura",
+    "placeholderSrc": "placeholders/arquitectura/foto2.jpg",
+    "id": 34,
+    "width": 683,
+    "height": 1024
+  },
+  {
+    "src": "img/arquitectura/foto3.jpg",
+    "title": "photo_titles.arch_3",
+    "category": "arquitectura",
+    "placeholderSrc": "placeholders/arquitectura/foto3.jpg",
+    "id": 35,
+    "width": 1024,
+    "height": 683
+  },
+  {
+    "src": "img/arquitectura/foto4.jpg",
+    "title": "photo_titles.arch_4",
+    "category": "arquitectura",
+    "placeholderSrc": "placeholders/arquitectura/foto4.jpg",
+    "id": 36,
+    "width": 819,
+    "height": 1024
+  },
+  {
+    "src": "img/arquitectura/foto5.jpg",
+    "title": "photo_titles.arch_5",
+    "category": "arquitectura",
+    "placeholderSrc": "placeholders/arquitectura/foto5.jpg",
+    "id": 37,
+    "width": 1024,
+    "height": 683
+  },
+  {
+    "src": "img/arquitectura/foto6.jpg",
+    "title": "photo_titles.arch_6",
+    "category": "arquitectura",
+    "placeholderSrc": "placeholders/arquitectura/foto6.jpg",
+    "id": 38,
+    "width": 819,
+    "height": 1024
+  },
+  {
+    "src": "img/arquitectura/foto7.jpg",
+    "title": "photo_titles.arch_7",
+    "category": "arquitectura",
+    "placeholderSrc": "placeholders/arquitectura/foto7.jpg",
+    "id": 39,
+    "width": 1024,
+    "height": 615
+  },
+  {
+    "src": "img/arquitectura/foto8.jpg",
+    "title": "photo_titles.arch_8",
+    "category": "arquitectura",
+    "placeholderSrc": "placeholders/arquitectura/foto8.jpg",
+    "id": 40,
+    "width": 683,
+    "height": 1024
+  },
+  {
+    "src": "img/arquitectura/foto9.jpg",
+    "title": "photo_titles.arch_9",
+    "category": "arquitectura",
+    "placeholderSrc": "placeholders/arquitectura/foto9.jpg",
+    "id": 41,
+    "width": 1024,
+    "height": 683
+  },
+  {
+    "src": "img/arquitectura/foto10.jpg",
+    "title": "photo_titles.arch_10",
+    "category": "arquitectura",
+    "placeholderSrc": "placeholders/arquitectura/foto10.jpg",
+    "id": 42,
+    "width": 273,
+    "height": 341
+  }
+]

@@ -69,7 +69,7 @@ async function processImage(photo, id) {
       const placeholderStats = await fs.stat(placeholderDestPath);
       if (sourceStats.mtime <= placeholderStats.mtime) {
         console.log(`= ⏩ Placeholder ya está actualizado para: ${photo.src}`);
-        return { ...photo, id, width, height, placeholderSrc };
+        return { ...photo, placeholderSrc, id, width, height };
       }
     }
 
@@ -84,10 +84,10 @@ async function processImage(photo, id) {
 
     console.log(`+ ✔️  Placeholder generado para: ${photo.src}`);
 
-    return { ...photo, id, width, height, placeholderSrc };
+    return { ...photo, placeholderSrc, id, width, height };
   } catch (error) {
     console.error(`- ❌ Error procesando ${photo.src}:`, error);
-    return { ...photo, id, width: 1, height: 1, placeholderSrc: "" };
+    return { ...photo, placeholderSrc: "", id, width: 1, height: 1 };
   }
 }
 
@@ -97,15 +97,27 @@ async function processImage(photo, id) {
 async function main() {
   console.log("🚀 Iniciando la generación de placeholders...");
 
-  const photosFromBase = await getPhotosData();
+  const photosByCategory = await getPhotosData();
+  const processingPromises = [];
+  let idCounter = 1;
 
-  // Procesa cada foto para añadir ID, width, height y placeholder
-  const updatedPhotos = await Promise.all(photosFromBase.map((photo, index) => processImage(photo, index + 1)));
+  for (const category in photosByCategory) {
+    if (Object.hasOwnProperty.call(photosByCategory, category)) {
+      const photosInCat = photosByCategory[category];
+      for (const photo of photosInCat) {
+        // Add category back to the photo object before processing
+        const photoWithCategory = { ...photo, category };
+        processingPromises.push(processImage(photoWithCategory, idCounter++));
+      }
+    }
+  }
+
+  const updatedPhotos = await Promise.all(processingPromises);
 
   await fs.writeJson(generatedPhotosPath, updatedPhotos, { spaces: 2 });
 
   console.log("\n✅ ¡Proceso completado!");
-  console.log(`✅ El archivo ${generatedPhotosPath} ha sido creado/actualizado con IDs, width, height y placeholders.`);
+  console.log(`✅ El archivo ${generatedPhotosPath} ha sido creado/actualizado con placeholders, IDs, widt y height.`);
   console.log(`ℹ️  'photos.json' ahora contiene 'width' y 'height' numéricos para uso en la app.`);
 }
 
