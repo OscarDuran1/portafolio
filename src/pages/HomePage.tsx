@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import PhotoThumbnail from "../components/PhotoThumbnail";
+import { AnimatePresence } from "framer-motion";
 import { type Photo, photos } from "../data/photos";
 import { categories } from "../data/categories";
 import Modal from "../components/Modal";
 import { useTranslation } from "react-i18next";
+import PhotoMasonry from "../components/PhotoMasonry";
 
 const HomePage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -74,23 +74,7 @@ const HomePage: React.FC = () => {
         </div>
 
         {/* Photo Grid */}
-        <motion.div layout className="columns-2 md:columns-3 lg:columns-4 gap-4">
-          <AnimatePresence>
-            {filteredPhotos.map((photo) => (
-              <motion.div
-                layout
-                key={photo.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.3 }}
-                className="mb-4 break-inside-avoid"
-              >
-                <PhotoThumbnail photo={photo} onClick={handlePhotoClick} />
-              </motion.div>
-            ))}
-          </AnimatePresence>
-        </motion.div>
+        <PhotoMasonry photos={filteredPhotos} onPhotoClick={handlePhotoClick} />
       </section>
 
       <AnimatePresence>{selectedPhoto && <Modal photo={selectedPhoto} onClose={handleCloseModal} onNext={handleNextPhoto} onPrevious={handlePreviousPhoto} />}</AnimatePresence>
