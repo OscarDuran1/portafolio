@@ -5,7 +5,7 @@ import sitemap from 'vite-plugin-sitemap'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: './',
+  base: '/portafolio/',
   plugins: [
     react(),
     tailwindcss(),
@@ -13,7 +13,7 @@ export default defineConfig({
       hostname: 'https://oscarduran1.github.io/portafolio',
       // Define aquí las rutas de tu aplicación
       dynamicRoutes: [
-        '/portafolio',
+        '/portafolio/',
         '/portafolio/about',
         '/portafolio/contact',
       ],

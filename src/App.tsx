@@ -1,10 +1,14 @@
+import { lazy } from "react";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
-import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
-import ContactPage from "./pages/ContactPage";
 
-// Usamos createHashRouter para una máxima compatibilidad con GitHub Pages.
+// Hacemos "lazy loading" de las páginas.
+// Esto divide el código de cada página en su propio archivo (chunk),
+// que solo se descarga cuando el usuario navega a esa página.
+const HomePage = lazy(() => import("./pages/HomePage"));
+const AboutPage = lazy(() => import("./pages/AboutPage"));
+const ContactPage = lazy(() => import("./pages/ContactPage"));
+
 // Esto usará URLs con un # (ej. /portafolio/#/about) que funcionan
 // sin necesidad de configuración especial en el servidor.
 const router = createHashRouter([
