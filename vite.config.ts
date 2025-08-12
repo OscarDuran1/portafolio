@@ -1,9 +1,27 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
+import sitemap from 'vite-plugin-sitemap'
 
 // https://vite.dev/config/
 export default defineConfig({
   base: './',
-  plugins: [react(), tailwindcss()],
+  plugins: [
+    react(),
+    tailwindcss(),
+    sitemap({
+      hostname: 'https://oscarduran1.github.io/portafolio',
+      // Define aquí las rutas de tu aplicación
+      dynamicRoutes: [
+        '/portafolio',
+        '/portafolio/about',
+        '/portafolio/contact',
+      ],
+      // Opcional: Genera también el robots.txt
+      robots: [{
+        userAgent: '*',
+        allow: '/',
+      }]
+    })
+  ],
 })
