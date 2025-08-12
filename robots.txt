@@ -1,0 +1,6 @@
+# Indica a todos los crawlers (robots) que pueden acceder a todo el sitio.
+User-agent: *
+Allow: /
+
+# Ubicación del sitemap para ayudar a los crawlers a encontrar tus páginas.
+Sitemap: https://oscarduran1.github.io/portafolio/sitemap.xml
