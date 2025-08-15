@@ -52,8 +52,8 @@ const HomePage: React.FC = () => {
     <>
       {/* Hero Section */}
       <div className="container mx-auto px-6 py-16 text-center">
-        <h1 className="text-5xl md:text-4xl font-extrabold leading-tight">{t("home.title")}</h1>
-        <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">{t("home.subtitle")}</p>
+        <h1 className="text-5xl md:text-6xl font-extrabold leading-tight text-gray-50">{t("home.title")}</h1>
+        <p className="mt-4 text-lg text-gray-200 max-w-2xl mx-auto">{t("home.subtitle")}</p>
       </div>
 
       {/* Photo Gallery Section */}

@@ -1,7 +1,7 @@
 {
   "nav": {
     "gallery": "Gallery",
-    "about": "About Me",
+    "about": "About me",
     "contact": "Contact"
   },
   "footer": {
@@ -13,8 +13,8 @@
     "gallery_title": "Gallery"
   },
   "about": {
-    "title": "About Me",
-    "p1": "Hi! I'm Oscar Durán, a photographer passionate about capturing beauty in everyday details. My journey in photography began over a decade ago, and since then, I haven't stopped exploring the world through my lens.",
+    "title": "About me",
+    "p1": "Hi! I'm Oscar Duran, a photographer passionate about capturing beauty in everyday details. My journey in photography began over a decade ago, and since then, I haven't stopped exploring the world through my lens.",
     "p2": "I specialize in documentary and landscape photography, always seeking the story hidden behind each scene. I believe a good photograph not only shows what something looks like, but how it feels.",
     "p3": "This portfolio is a collection of moments that have moved me, and I hope they inspire you too."
   },

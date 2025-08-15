@@ -8,9 +8,6 @@ import AnalyticsTracker from "../components/AnalyticsTracker";
 const MainLayout: React.FC = () => {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const activeLinkStyle = {
-    color: "rgb(16 182 212)",
-  };
   const pageVariants = {
     initial: {
       opacity: 0,
@@ -62,17 +59,26 @@ const MainLayout: React.FC = () => {
             <div className="hidden md:flex items-center gap-8">
               <ul className="flex items-center space-x-6">
                 <li>
-                  <NavLink to="/" className="hover:text-cyan-400 transition-colors" style={({ isActive }) => (isActive ? activeLinkStyle : undefined)}>
+                  <NavLink
+                    to="/"
+                    className={({ isActive }) => `transition-colors ${isActive ? "text-cyan-400" : "hover:text-cyan-400"}`}
+                  >
                     {t("nav.gallery")}
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/about" className="hover:text-cyan-400 transition-colors" style={({ isActive }) => (isActive ? activeLinkStyle : undefined)}>
+                  <NavLink
+                    to="/about"
+                    className={({ isActive }) => `transition-colors ${isActive ? "text-cyan-400" : "hover:text-cyan-400"}`}
+                  >
                     {t("nav.about")}
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/contact" className="hover:text-cyan-400 transition-colors" style={({ isActive }) => (isActive ? activeLinkStyle : undefined)}>
+                  <NavLink
+                    to="/contact"
+                    className={({ isActive }) => `transition-colors ${isActive ? "text-cyan-400" : "hover:text-cyan-400"}`}
+                  >
                     {t("nav.contact")}
                   </NavLink>
                 </li>
@@ -86,7 +92,11 @@ const MainLayout: React.FC = () => {
               <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} className="md:hidden bg-gray-800/90 backdrop-blur-sm absolute w-full z-10">
                 <ul className="flex flex-col items-center space-y-6 py-8">
                   <li>
-                    <NavLink to="/" onClick={() => setIsMenuOpen(false)} className="hover:text-cyan-400 transition-colors text-lg" style={({ isActive }) => (isActive ? activeLinkStyle : undefined)}>
+                    <NavLink
+                      to="/"
+                      onClick={() => setIsMenuOpen(false)}
+                      className={({ isActive }) => `text-lg transition-colors ${isActive ? "text-cyan-500" : "hover:text-cyan-400"}`}
+                    >
                       {t("nav.gallery")}
                     </NavLink>
                   </li>
@@ -94,8 +104,7 @@ const MainLayout: React.FC = () => {
                     <NavLink
                       to="/about"
                       onClick={() => setIsMenuOpen(false)}
-                      className="hover:text-cyan-400 transition-colors text-lg"
-                      style={({ isActive }) => (isActive ? activeLinkStyle : undefined)}
+                      className={({ isActive }) => `text-lg transition-colors ${isActive ? "text-cyan-500" : "hover:text-cyan-400"}`}
                     >
                       {t("nav.about")}
                     </NavLink>
@@ -104,8 +113,7 @@ const MainLayout: React.FC = () => {
                     <NavLink
                       to="/contact"
                       onClick={() => setIsMenuOpen(false)}
-                      className="hover:text-cyan-400 transition-colors text-lg"
-                      style={({ isActive }) => (isActive ? activeLinkStyle : undefined)}
+                      className={({ isActive }) => `text-lg transition-colors ${isActive ? "text-cyan-500" : "hover:text-cyan-400"}`}
                     >
                       {t("nav.contact")}
                     </NavLink>
@@ -133,7 +141,7 @@ const MainLayout: React.FC = () => {
 
         {/* Footer */}
         <footer className="bg-gray-800 mt-auto">
-          <div className="container mx-auto px-6 py-4 text-center text-gray-400">
+          <div className="container mx-auto px-6 py-4 text-center text-gray-300">
             <p>
               &copy; {new Date().getFullYear()} Oscar Durán. {t("footer.rights")}
             </p>
