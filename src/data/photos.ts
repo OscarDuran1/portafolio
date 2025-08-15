@@ -10,4 +10,6 @@ export interface Photo {
   height: number;
 }
 
-export const photos: Photo[] = photosData;
+const photosByCategory: { [key: string]: Photo[] } = photosData;
+
+export const photos: Photo[] = Object.values(photosByCategory).flat();

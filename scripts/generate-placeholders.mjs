@@ -12,9 +12,9 @@ const sourcePhotosPath = path.join(projectRoot, "src", "data", "photos-base.json
 const generatedPhotosPath = path.join(projectRoot, "src", "data", "photos.json"); // Archivo generado
 
 // --- Configuración de Placeholders ---
-const PLACEHOLDER_WIDTH = 20;
-const PLACEHOLDER_BLUR = 1.5;
-const PLACEHOLDER_QUALITY = 80;
+const PLACEHOLDER_WIDTH = 24;
+const PLACEHOLDER_BLUR = 2;
+const PLACEHOLDER_WEBP_QUALITY = 75;
 
 // --- Lógica del Script ---
 
@@ -27,45 +27,36 @@ async function getPhotosData() {
 }
 
 /**
- * Calcula el máximo común divisor para simplificar la relación de aspecto.
- * @param {number} a - Ancho.
- * @param {number} b - Alto.
- * @returns {number} El máximo común divisor.
- */
-function gcd(a, b) {
-  return b === 0 ? a : gcd(b, a % b);
-}
-
-/**
  * Procesa una sola imagen para crear su placeholder.
  * @param {object} photo - El objeto de la foto del archivo de datos.
  * @param {number} id - El ID consecutivo para asignar a la foto.
- * @returns {Promise<object>} El objeto de la foto actualizado con placeholderSrc.
+ * @returns {Promise<object>} El objeto de la foto actualizado con rutas WebP y datos de placeholder.
  */
 async function processImage(photo, id) {
   try {
-    const sourcePath = path.join(publicDir, photo.src);
+    // La fuente ahora es un archivo .webp
+    const sourcePath = path.join(publicDir, photo.src); // e.g., public/img/documental/foto1.webp
     if (!(await fs.pathExists(sourcePath))) {
       console.warn(`- ⚠️  Advertencia: No se encontró la imagen fuente, se omitirá: ${photo.src}`);
       return { ...photo, id, width: 1, height: 1, placeholderSrc: "" };
     }
 
+    // --- Definir rutas de destino para el placeholder ---
+    const placeholderFileName = path.basename(photo.src); // ya es .webp
     const placeholderDir = path.join(publicDir, "placeholders", photo.category);
-    const placeholderFileName = path.basename(photo.src);
     const placeholderDestPath = path.join(placeholderDir, placeholderFileName);
     const placeholderSrc = `placeholders/${photo.category}/${placeholderFileName}`.replace(/\\/g, "/");
 
     // --- Obtener dimensiones y calcular relación de aspecto ---
     const metadata = await sharp(sourcePath).metadata();
-    const originalWidth = metadata.width ?? 1;
-    const originalHeight = metadata.height ?? 1;
-    const divisor = gcd(originalWidth, originalHeight);
-    const width = originalWidth / divisor;
-    const height = originalHeight / divisor;
+    const width = metadata.width ?? 1;
+    const height = metadata.height ?? 1;
 
     // --- Optimización: Solo generar si es necesario ---
-    if (await fs.pathExists(placeholderDestPath)) {
-      const sourceStats = await fs.stat(sourcePath);
+    const sourceStats = await fs.stat(sourcePath);
+    const placeholderExists = await fs.pathExists(placeholderDestPath);
+
+    if (placeholderExists) {
       const placeholderStats = await fs.stat(placeholderDestPath);
       if (sourceStats.mtime <= placeholderStats.mtime) {
         console.log(`= ⏩ Placeholder ya está actualizado para: ${photo.src}`);
@@ -73,15 +64,15 @@ async function processImage(photo, id) {
       }
     }
 
+    // --- Generar directorios si no existen ---
     await fs.ensureDir(placeholderDir);
 
-    // Usa sharp para redimensionar, aplicar blur y comprimir la imagen.
+    // Generar placeholder WebP
     await sharp(sourcePath)
-      .resize(PLACEHOLDER_WIDTH) // Redimensiona a 20px de ancho, manteniendo la proporción.
-      .blur(PLACEHOLDER_BLUR) // Aplica un desenfoque suave.
-      .jpeg({ quality: PLACEHOLDER_QUALITY }) // Comprime la imagen.
+      .resize(PLACEHOLDER_WIDTH)
+      .blur(PLACEHOLDER_BLUR)
+      .webp({ quality: PLACEHOLDER_WEBP_QUALITY })
       .toFile(placeholderDestPath);
-
     console.log(`+ ✔️  Placeholder generado para: ${photo.src}`);
 
     return { ...photo, placeholderSrc, id, width, height };
@@ -98,27 +89,25 @@ async function main() {
   console.log("🚀 Iniciando la generación de placeholders...");
 
   const photosByCategory = await getPhotosData();
-  const processingPromises = [];
+  const newPhotosData = {};
   let idCounter = 1;
 
   for (const category in photosByCategory) {
     if (Object.hasOwnProperty.call(photosByCategory, category)) {
+      console.log(`\n--- Procesando categoría: ${category} ---`);
       const photosInCat = photosByCategory[category];
+      const processingPromises = [];
       for (const photo of photosInCat) {
-        // Add category back to the photo object before processing
         const photoWithCategory = { ...photo, category };
         processingPromises.push(processImage(photoWithCategory, idCounter++));
       }
+      newPhotosData[category] = await Promise.all(processingPromises);
     }
   }
 
-  const updatedPhotos = await Promise.all(processingPromises);
-
-  await fs.writeJson(generatedPhotosPath, updatedPhotos, { spaces: 2 });
+  await fs.writeJson(generatedPhotosPath, newPhotosData, { spaces: 2 });
 
   console.log("\n✅ ¡Proceso completado!");
-  console.log(`✅ El archivo ${generatedPhotosPath} ha sido creado/actualizado con placeholders, IDs, widt y height.`);
-  console.log(`ℹ️  'photos.json' ahora contiene 'width' y 'height' numéricos para uso en la app.`);
 }
 
 main().catch(console.error);
