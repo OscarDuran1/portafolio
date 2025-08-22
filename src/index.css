@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 @import "tailwindcss";
 
 @theme {
-    --font-sans: "Poppins", sans-serif;    
-    --font-title: "Montserrat", sans-serif;
+    --font-sans: "Open Sans", sans-serif;    
+    --font-title: "Roboto Condensed", sans-serif;
 }
 
 body {

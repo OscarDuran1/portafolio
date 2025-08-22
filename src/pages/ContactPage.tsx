@@ -6,7 +6,7 @@ const ContactPage: React.FC = () => {
 
   return (
     <div className="container mx-auto px-6 py-16">
-      <h1 className="text-5xl font-bold text-center mb-8">{t("contact.title")}</h1>
+      <h1 className="text-5xl text-center mb-8">{t("contact.title")}</h1>
       <div className="max-w-xl mx-auto text-center text-lg text-gray-100 bg-gray-800/50 p-8 rounded-lg">
         <p className="mb-6">{t("contact.p1")}</p>
         <p className="mb-6">
