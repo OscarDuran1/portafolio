@@ -14,13 +14,13 @@ const LanguageSwitcher: React.FC = () => {
   ];
 
   return (
-    <div className="flex items-center space-x-2 bg-gray-700 rounded-full p-1">
+    <div className="flex items-center space-x-2 bg-zinc-700 rounded-full p-1">
       {languages.map((lang) => (
         <button
           key={lang.code}
           onClick={() => changeLanguage(lang.code)}
-          className={`px-3 py-1 text-xs font-bold rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 focus:ring-offset-gray-900 ${
-            i18n.language.startsWith(lang.code) ? "bg-cyan-500 text-white" : "text-gray-300 hover:bg-gray-600"
+          className={`px-3 py-1 text-xs font-bold rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 focus:ring-offset-zinc-900 ${
+            i18n.language.startsWith(lang.code) ? "bg-cyan-500 text-white" : "text-zinc-300 hover:bg-zinc-600"
           }`}
           aria-current={i18n.language.startsWith(lang.code) ? "page" : undefined}
         >

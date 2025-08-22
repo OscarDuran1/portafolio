@@ -7,7 +7,7 @@ const ContactPage: React.FC = () => {
   return (
     <div className="container mx-auto px-6 py-16">
       <h1 className="text-5xl text-center mb-8">{t("contact.title")}</h1>
-      <div className="max-w-xl mx-auto text-center text-lg text-gray-100 bg-gray-800/50 p-8 rounded-lg">
+      <div className="max-w-xl mx-auto text-center text-lg text-zinc-100 bg-zinc-800/50 p-8 rounded-lg">
         <p className="mb-6">{t("contact.p1")}</p>
         <p className="mb-6">
           {t("contact.p2")}
@@ -18,7 +18,7 @@ const ContactPage: React.FC = () => {
         <div className="mt-8">
           <p className="mb-4">{t("contact.p3")}</p>
           <div className="flex justify-center items-center gap-8">
-            <a href="https://instagram.com/oscar.duran.fotografia" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-gray-300 hover:text-cyan-400 transition-colors">
+            <a href="https://instagram.com/oscar.duran.fotografia" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-cyan-400 hover:text-cyan-700 transition-colors">
               <svg className="w-16 h-16" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path
                   fillRule="evenodd"
@@ -27,7 +27,7 @@ const ContactPage: React.FC = () => {
                 />
               </svg>
             </a>
-            <a href="https://facebook.com/oscar.duran.fotografia" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-gray-400 hover:text-cyan-400 transition-colors">
+            <a href="https://facebook.com/oscar.duran.fotografia" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-cyan-400 hover:text-cyan-700 transition-colors">
               <svg className="w-16 h-16" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path
                   fillRule="evenodd"

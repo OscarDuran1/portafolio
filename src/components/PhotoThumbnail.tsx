@@ -19,7 +19,7 @@ const PhotoThumbnail = ({ photo, onClick }: PhotoThumbnailProps) => {
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.8 }}
       transition={{ duration: 0.3, ease: "easeInOut" }}
-      className={`group relative cursor-pointer overflow-hidden rounded-lg focus-within:ring-2 focus-within:ring-cyan-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-900`}
+      className={`group relative cursor-pointer overflow-hidden rounded-lg focus-within:ring-2 focus-within:ring-cyan-500 focus-within:ring-offset-2 focus-within:ring-offset-zinc-900`}
       onClick={() => onClick(photo)}
       onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && onClick(photo)}
       tabIndex={0}

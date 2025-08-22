@@ -7,9 +7,9 @@ const AboutPage: React.FC = () => {
   return (
     <div className="container mx-auto px-6 py-16">
       <h1 className="text-5xl text-center mb-12">{t("about.title")}</h1>
-      <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-10 bg-gray-800/50 p-8 rounded-lg">
-        <img src="img/perfil.webp" alt="Oscar Durán" className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover shadow-lg flex-shrink-0 border-4 border-gray-700" />
-        <div className="text-lg text-gray-100 leading-relaxed text-center md:text-left">
+      <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-10 bg-zinc-800/50 p-8 rounded-lg">
+        <img src="img/perfil.webp" alt="Oscar Durán" className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover shadow-lg flex-shrink-0 border-4 border-zinc-700" />
+        <div className="text-lg text-zinc-100 leading-relaxed text-center md:text-left">
           <p className="mb-6">{t("about.p1")}</p>
           <p className="mb-6">{t("about.p2")}</p>
           <p>{t("about.p3")}</p>

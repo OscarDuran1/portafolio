@@ -52,8 +52,8 @@ const HomePage: React.FC = () => {
     <>
       {/* Hero Section */}
       <div className="container mx-auto px-6 py-16 text-center">
-        <h1 className="text-4xl md:text-5xl text-gray-50">{t("home.title")}</h1>
-        <p className="mt-4 text-lg text-gray-200 max-w-2xl mx-auto">{t("home.subtitle")}</p>
+        <h1 className="text-4xl md:text-5xl text-zinc-50">{t("home.title")}</h1>
+        <p className="mt-4 text-lg text-zinc-200 max-w-2xl mx-auto">{t("home.subtitle")}</p>
       </div>
 
       {/* Photo Gallery Section */}
@@ -66,7 +66,7 @@ const HomePage: React.FC = () => {
             <button
               key={category.id}
               onClick={() => setSelectedCategory(category.id)}
-              className={`px-4 py-2 rounded-md text-white transition-colors duration-300 ${selectedCategory === category.id ? "bg-cyan-500" : "bg-gray-700 hover:bg-cyan-600"}`}
+              className={`px-4 py-2 rounded-md text-white transition-colors duration-300 ${selectedCategory === category.id ? "bg-cyan-500" : "bg-zinc-700 hover:bg-cyan-600"}`}
             >
               {t(category.name)}
             </button>

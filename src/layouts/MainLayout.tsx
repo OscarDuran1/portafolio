@@ -47,9 +47,9 @@ const MainLayout: React.FC = () => {
   return (
     <>
       <AnalyticsTracker />
-      <div className="min-h-screen bg-gray-900 text-gray-100 font-sans flex flex-col">
+      <div className="min-h-screen bg-zinc-900 text-zinc-100 font-sans flex flex-col">
         {/* Header */}
-        <header className="backdrop-blur-sm sticky top-0 z-20 border-b border-gray-700">
+        <header className="backdrop-blur-sm sticky top-0 z-20 border-b border-zinc-700">
           <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
             {/* Izquierda: Logo */}
             <div className="flex-1 md:flex-none">
@@ -106,7 +106,7 @@ const MainLayout: React.FC = () => {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
-                className="md:hidden bg-gray-800/90 backdrop-blur-sm absolute w-full z-10"
+                className="md:hidden bg-zinc-800/90 backdrop-blur-sm absolute w-full z-10"
               >
                 <ul className="flex flex-col items-center space-y-6 py-8">
                   <li>
@@ -160,7 +160,7 @@ const MainLayout: React.FC = () => {
 
         {/* Footer */}
         <footer className="mt-auto">
-          <div className="container mx-auto px-6 py-4 text-center text-gray-300">
+          <div className="container mx-auto px-6 py-4 text-center text-zinc-300">
             <p>
               &copy; {new Date().getFullYear()} Oscar Durán. {t("footer.rights")}
             </p>
