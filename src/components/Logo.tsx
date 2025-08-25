@@ -1,15 +1,13 @@
 import React from 'react';
+import LogoSvg from '../assets/logo.svg?react';
 
-const Logo: React.FC = () => (
-  <svg height="40" viewBox="0 0 400 40" xmlns="http://www.w3.org/2000/svg" className="text-white fill-current w-auto font-light font-title">
-    <text
-      x="0"
-      y="30"
-      fontSize="40"
-    >
-      Oscar Durán
-    </text>
-  </svg>
-);
+interface LogoProps {
+  className?: string;
+  height?: number; // Prop para controlar la altura del logo
+}
+
+const Logo: React.FC<LogoProps> = ({ className, height = 80 }) => {
+  return <LogoSvg height={height} className={className} />;
+};
 
 export default Logo;

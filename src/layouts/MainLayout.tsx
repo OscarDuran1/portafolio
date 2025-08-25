@@ -50,11 +50,14 @@ const MainLayout: React.FC = () => {
       <div className="min-h-screen bg-zinc-900 text-zinc-100 font-sans flex flex-col">
         {/* Header */}
         <header className="backdrop-blur-sm sticky top-0 z-20 border-b border-zinc-700">
-          <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
+          <nav className="container mx-auto px-6 py-2 flex justify-between items-center">
             {/* Izquierda: Logo */}
             <div className="flex-1 md:flex-none">
-              <NavLink to="/" className="hover:opacity-80 transition-opacity" aria-label="Página de inicio">
-                <Logo />
+              <NavLink to="/" aria-label="Página de inicio">
+                <Logo
+                  height={70}
+                  className="text-zinc-100 hover:text-zinc-400 transition-all duration-300"
+                />
               </NavLink>
             </div>
 
