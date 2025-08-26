@@ -52,13 +52,12 @@ const HomePage: React.FC = () => {
     <>
       {/* Hero Section */}
       <div className="container mx-auto px-6 py-16 text-center">
-        <h1 className="text-4xl md:text-5xl text-zinc-50">{t("home.title")}</h1>
-        <p className="mt-4 text-lg text-zinc-200 max-w-2xl mx-auto">{t("home.subtitle")}</p>
+        <h2 className="text-3xl md:text-4xl text-zinc-50">{t("home.title")}</h2>
       </div>
 
       {/* Photo Gallery Section */}
       <section id="gallery" className="container mx-auto px-6 py-12">
-        <h2 className="text-4xl text-center mb-8">{t("home.gallery_title")}</h2>
+        <h2 className="text-5xl text-center mb-8">{t("home.gallery_title")}</h2>
 
         {/* Filter Buttons */}
         <div className="flex justify-center flex-wrap gap-4 mb-12">
