@@ -8,6 +8,7 @@ export interface Photo {
   category: string;
   width: number;
   height: number;
+  alt: string;
 }
 
 const photosByCategory: { [key: string]: Photo[] } = photosData;

@@ -7,7 +7,8 @@
       "placeholderSrc": "placeholders/documental/foto1.webp",
       "id": 1,
       "width": 1600,
-      "height": 1131
+      "height": 1131,
+      "alt": "photo_titles.doc_1"
     },
     {
       "src": "img/documental/foto2.webp",
@@ -16,7 +17,8 @@
       "placeholderSrc": "placeholders/documental/foto2.webp",
       "id": 2,
       "width": 1143,
-      "height": 1600
+      "height": 1600,
+      "alt": "photo_titles.doc_2"
     },
     {
       "src": "img/documental/foto3.webp",
@@ -25,7 +27,8 @@
       "placeholderSrc": "placeholders/documental/foto3.webp",
       "id": 3,
       "width": 1252,
-      "height": 1600
+      "height": 1600,
+      "alt": "photo_titles.doc_3"
     },
     {
       "src": "img/documental/foto4.webp",
@@ -34,7 +37,8 @@
       "placeholderSrc": "placeholders/documental/foto4.webp",
       "id": 4,
       "width": 1600,
-      "height": 982
+      "height": 982,
+      "alt": "photo_titles.doc_4"
     },
     {
       "src": "img/documental/foto5.webp",
@@ -43,7 +47,8 @@
       "placeholderSrc": "placeholders/documental/foto5.webp",
       "id": 5,
       "width": 1600,
-      "height": 1067
+      "height": 1067,
+      "alt": "photo_titles.doc_5"
     },
     {
       "src": "img/documental/foto6.webp",
@@ -52,7 +57,8 @@
       "placeholderSrc": "placeholders/documental/foto6.webp",
       "id": 6,
       "width": 1600,
-      "height": 1144
+      "height": 1144,
+      "alt": "photo_titles.doc_6"
     },
     {
       "src": "img/documental/foto7.webp",
@@ -61,7 +67,8 @@
       "placeholderSrc": "placeholders/documental/foto7.webp",
       "id": 7,
       "width": 1600,
-      "height": 1102
+      "height": 1102,
+      "alt": "photo_titles.doc_7"
     },
     {
       "src": "img/documental/foto8.webp",
@@ -70,7 +77,8 @@
       "placeholderSrc": "placeholders/documental/foto8.webp",
       "id": 8,
       "width": 1600,
-      "height": 1067
+      "height": 1067,
+      "alt": "photo_titles.doc_8"
     },
     {
       "src": "img/documental/foto9.webp",
@@ -79,7 +87,8 @@
       "placeholderSrc": "placeholders/documental/foto9.webp",
       "id": 9,
       "width": 1600,
-      "height": 1067
+      "height": 1067,
+      "alt": "photo_titles.doc_9"
     },
     {
       "src": "img/documental/foto10.webp",
@@ -88,7 +97,8 @@
       "placeholderSrc": "placeholders/documental/foto10.webp",
       "id": 10,
       "width": 1600,
-      "height": 1174
+      "height": 1174,
+      "alt": "photo_titles.doc_10"
     },
     {
       "src": "img/documental/foto11.webp",
@@ -97,7 +107,8 @@
       "placeholderSrc": "placeholders/documental/foto11.webp",
       "id": 11,
       "width": 1600,
-      "height": 1067
+      "height": 1067,
+      "alt": "photo_titles.doc_11"
     },
     {
       "src": "img/documental/foto12.webp",
@@ -106,7 +117,8 @@
       "placeholderSrc": "placeholders/documental/foto12.webp",
       "id": 12,
       "width": 1600,
-      "height": 1067
+      "height": 1067,
+      "alt": "photo_titles.doc_12"
     }
   ],
   "retrato": [
@@ -117,7 +129,8 @@
       "placeholderSrc": "placeholders/retrato/foto1.webp",
       "id": 13,
       "width": 1280,
-      "height": 1600
+      "height": 1600,
+      "alt": "photo_titles.port_1"
     },
     {
       "src": "img/retrato/foto2.webp",
@@ -126,7 +139,8 @@
       "placeholderSrc": "placeholders/retrato/foto2.webp",
       "id": 14,
       "width": 819,
-      "height": 1024
+      "height": 1024,
+      "alt": "photo_titles.port_2"
     },
     {
       "src": "img/retrato/foto3.webp",
@@ -135,7 +149,8 @@
       "placeholderSrc": "placeholders/retrato/foto3.webp",
       "id": 15,
       "width": 1280,
-      "height": 1600
+      "height": 1600,
+      "alt": "photo_titles.port_3"
     },
     {
       "src": "img/retrato/foto4.webp",
@@ -144,7 +159,8 @@
       "placeholderSrc": "placeholders/retrato/foto4.webp",
       "id": 16,
       "width": 819,
-      "height": 1023
+      "height": 1023,
+      "alt": "photo_titles.port_4"
     },
     {
       "src": "img/retrato/foto5.webp",
@@ -153,7 +169,8 @@
       "placeholderSrc": "placeholders/retrato/foto5.webp",
       "id": 17,
       "width": 1187,
-      "height": 1600
+      "height": 1600,
+      "alt": "photo_titles.port_5"
     },
     {
       "src": "img/retrato/foto6.webp",
@@ -162,7 +179,8 @@
       "placeholderSrc": "placeholders/retrato/foto6.webp",
       "id": 18,
       "width": 1067,
-      "height": 1600
+      "height": 1600,
+      "alt": "photo_titles.port_6"
     },
     {
       "src": "img/retrato/foto7.webp",
@@ -171,7 +189,8 @@
       "placeholderSrc": "placeholders/retrato/foto7.webp",
       "id": 19,
       "width": 1280,
-      "height": 1600
+      "height": 1600,
+      "alt": "photo_titles.port_7"
     },
     {
       "src": "img/retrato/foto8.webp",
@@ -180,7 +199,8 @@
       "placeholderSrc": "placeholders/retrato/foto8.webp",
       "id": 20,
       "width": 1280,
-      "height": 1600
+      "height": 1600,
+      "alt": "photo_titles.port_8"
     },
     {
       "src": "img/retrato/foto9.webp",
@@ -189,7 +209,8 @@
       "placeholderSrc": "placeholders/retrato/foto9.webp",
       "id": 21,
       "width": 1173,
-      "height": 1600
+      "height": 1600,
+      "alt": "photo_titles.port_9"
     },
     {
       "src": "img/retrato/foto10.webp",
@@ -198,7 +219,8 @@
       "placeholderSrc": "placeholders/retrato/foto10.webp",
       "id": 22,
       "width": 1280,
-      "height": 1600
+      "height": 1600,
+      "alt": "photo_titles.port_10"
     }
   ],
   "paisaje": [
@@ -209,7 +231,8 @@
       "placeholderSrc": "placeholders/paisaje/foto1.webp",
       "id": 23,
       "width": 1024,
-      "height": 683
+      "height": 683,
+      "alt": "photo_titles.land_1"
     },
     {
       "src": "img/paisaje/foto2.webp",
@@ -218,7 +241,8 @@
       "placeholderSrc": "placeholders/paisaje/foto2.webp",
       "id": 24,
       "width": 1024,
-      "height": 683
+      "height": 683,
+      "alt": "photo_titles.land_2"
     },
     {
       "src": "img/paisaje/foto3.webp",
@@ -227,7 +251,8 @@
       "placeholderSrc": "placeholders/paisaje/foto3.webp",
       "id": 25,
       "width": 1024,
-      "height": 683
+      "height": 683,
+      "alt": "photo_titles.land_3"
     },
     {
       "src": "img/paisaje/foto4.webp",
@@ -236,7 +261,8 @@
       "placeholderSrc": "placeholders/paisaje/foto4.webp",
       "id": 26,
       "width": 1024,
-      "height": 672
+      "height": 672,
+      "alt": "photo_titles.land_4"
     },
     {
       "src": "img/paisaje/foto5.webp",
@@ -245,7 +271,8 @@
       "placeholderSrc": "placeholders/paisaje/foto5.webp",
       "id": 27,
       "width": 1024,
-      "height": 683
+      "height": 683,
+      "alt": "photo_titles.land_5"
     },
     {
       "src": "img/paisaje/foto6.webp",
@@ -254,7 +281,8 @@
       "placeholderSrc": "placeholders/paisaje/foto6.webp",
       "id": 28,
       "width": 1024,
-      "height": 683
+      "height": 683,
+      "alt": "photo_titles.land_6"
     },
     {
       "src": "img/paisaje/foto7.webp",
@@ -263,7 +291,8 @@
       "placeholderSrc": "placeholders/paisaje/foto7.webp",
       "id": 29,
       "width": 1024,
-      "height": 683
+      "height": 683,
+      "alt": "photo_titles.land_7"
     },
     {
       "src": "img/paisaje/foto8.webp",
@@ -272,7 +301,8 @@
       "placeholderSrc": "placeholders/paisaje/foto8.webp",
       "id": 30,
       "width": 1024,
-      "height": 683
+      "height": 683,
+      "alt": "photo_titles.land_8"
     },
     {
       "src": "img/paisaje/foto9.webp",
@@ -281,7 +311,8 @@
       "placeholderSrc": "placeholders/paisaje/foto9.webp",
       "id": 31,
       "width": 1024,
-      "height": 683
+      "height": 683,
+      "alt": "photo_titles.land_9"
     },
     {
       "src": "img/paisaje/foto10.webp",
@@ -290,7 +321,8 @@
       "placeholderSrc": "placeholders/paisaje/foto10.webp",
       "id": 32,
       "width": 1024,
-      "height": 683
+      "height": 683,
+      "alt": "photo_titles.land_10"
     }
   ],
   "arquitectura": [
@@ -301,7 +333,8 @@
       "placeholderSrc": "placeholders/arquitectura/foto1.webp",
       "id": 33,
       "width": 683,
-      "height": 1024
+      "height": 1024,
+      "alt": "photo_titles.arch_1"
     },
     {
       "src": "img/arquitectura/foto2.webp",
@@ -310,7 +343,8 @@
       "placeholderSrc": "placeholders/arquitectura/foto2.webp",
       "id": 34,
       "width": 683,
-      "height": 1024
+      "height": 1024,
+      "alt": "photo_titles.arch_2"
     },
     {
       "src": "img/arquitectura/foto3.webp",
@@ -319,7 +353,8 @@
       "placeholderSrc": "placeholders/arquitectura/foto3.webp",
       "id": 35,
       "width": 819,
-      "height": 1024
+      "height": 1024,
+      "alt": "photo_titles.arch_3"
     },
     {
       "src": "img/arquitectura/foto4.webp",
@@ -328,7 +363,8 @@
       "placeholderSrc": "placeholders/arquitectura/foto4.webp",
       "id": 36,
       "width": 819,
-      "height": 1024
+      "height": 1024,
+      "alt": "photo_titles.arch_4"
     },
     {
       "src": "img/arquitectura/foto5.webp",
@@ -337,7 +373,8 @@
       "placeholderSrc": "placeholders/arquitectura/foto5.webp",
       "id": 37,
       "width": 1024,
-      "height": 683
+      "height": 683,
+      "alt": "photo_titles.arch_5"
     },
     {
       "src": "img/arquitectura/foto6.webp",
@@ -346,7 +383,8 @@
       "placeholderSrc": "placeholders/arquitectura/foto6.webp",
       "id": 38,
       "width": 1024,
-      "height": 683
+      "height": 683,
+      "alt": "photo_titles.arch_6"
     },
     {
       "src": "img/arquitectura/foto7.webp",
@@ -355,7 +393,8 @@
       "placeholderSrc": "placeholders/arquitectura/foto7.webp",
       "id": 39,
       "width": 1024,
-      "height": 615
+      "height": 615,
+      "alt": "photo_titles.arch_7"
     },
     {
       "src": "img/arquitectura/foto8.webp",
@@ -364,7 +403,8 @@
       "placeholderSrc": "placeholders/arquitectura/foto8.webp",
       "id": 40,
       "width": 1024,
-      "height": 683
+      "height": 683,
+      "alt": "photo_titles.arch_8"
     },
     {
       "src": "img/arquitectura/foto9.webp",
@@ -373,7 +413,8 @@
       "placeholderSrc": "placeholders/arquitectura/foto9.webp",
       "id": 41,
       "width": 819,
-      "height": 1023
+      "height": 1023,
+      "alt": "photo_titles.arch_9"
     },
     {
       "src": "img/arquitectura/foto10.webp",
@@ -382,7 +423,8 @@
       "placeholderSrc": "placeholders/arquitectura/foto10.webp",
       "id": 42,
       "width": 683,
-      "height": 1024
+      "height": 1024,
+      "alt": "photo_titles.arch_10"
     }
   ]
 }

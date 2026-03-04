@@ -60,7 +60,7 @@ async function processImage(photo, id) {
       const placeholderStats = await fs.stat(placeholderDestPath);
       if (sourceStats.mtime <= placeholderStats.mtime) {
         console.log(`= ⏩ Placeholder ya está actualizado para: ${photo.src}`);
-        return { ...photo, placeholderSrc, id, width, height };
+        return { ...photo, placeholderSrc, id, width, height, alt: photo.title };
       }
     }
 
@@ -75,10 +75,10 @@ async function processImage(photo, id) {
       .toFile(placeholderDestPath);
     console.log(`+ ✔️  Placeholder generado para: ${photo.src}`);
 
-    return { ...photo, placeholderSrc, id, width, height };
+    return { ...photo, placeholderSrc, id, width, height, alt: photo.title };
   } catch (error) {
     console.error(`- ❌ Error procesando ${photo.src}:`, error);
-    return { ...photo, placeholderSrc: "", id, width: 1, height: 1 };
+    return { ...photo, placeholderSrc: "", id, width: 1, height: 1, alt: photo.title };
   }
 }
 
