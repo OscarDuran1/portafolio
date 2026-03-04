@@ -5,11 +5,17 @@ import { categories } from "../data/categories";
 import Modal from "../components/Modal";
 import { useTranslation } from "react-i18next";
 import PhotoMasonry from "../components/PhotoMasonry";
+import { useSEO } from "../hooks/useSEO";
 
 const HomePage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [selectedPhoto, setSelectedPhoto] = useState<Photo | null>(null);
   const { t } = useTranslation();
+
+  useSEO({
+    titleKey: "home.seo_title",
+    descriptionKey: "home.seo_description"
+  });
 
   const filteredPhotos = selectedCategory === "all" ? photos : photos.filter((photo) => photo.category === selectedCategory);
 
@@ -52,14 +58,14 @@ const HomePage: React.FC = () => {
     <>
       {/* Hero Section */}
       <div className="container mx-auto px-6 py-20 text-center animate-fade-in">
-        <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-text-main transition-colors duration-300">
+        <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-text-main transition-colors duration-300">
           {t("home.title")}
-        </h2>
+        </h1>
       </div>
 
       {/* Photo Gallery Section */}
       <section id="gallery" className="container mx-auto px-6 py-12">
-        <h2 className="text-5xl text-center mb-8">{t("home.gallery_title")}</h2>
+        <h2 className="text-4xl text-center mb-8">{t("home.gallery_title")}</h2>
 
         {/* Filter Buttons */}
         <div className="flex justify-center flex-wrap gap-4 mb-12">
@@ -68,8 +74,8 @@ const HomePage: React.FC = () => {
               key={category.id}
               onClick={() => setSelectedCategory(category.id)}
               className={`px-6 py-2 rounded-full font-medium transition-all duration-300 border ${selectedCategory === category.id
-                  ? "bg-accent text-white border-accent shadow-lg shadow-accent/20"
-                  : "bg-transparent text-text-main border-zinc-500/30 hover:border-accent hover:text-accent"
+                ? "bg-accent text-white border-accent shadow-lg shadow-accent/20"
+                : "bg-transparent text-text-main border-zinc-500/30 hover:border-accent hover:text-accent"
                 }`}
             >
               {t(category.name)}

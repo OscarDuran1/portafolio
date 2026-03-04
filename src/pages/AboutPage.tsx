@@ -1,8 +1,14 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { useSEO } from "../hooks/useSEO";
 
 const AboutPage: React.FC = () => {
   const { t } = useTranslation();
+
+  useSEO({
+    titleKey: "about.seo_title",
+    descriptionKey: "about.seo_description"
+  });
 
   return (
     <div className="container mx-auto px-6 py-16 animate-fade-in">

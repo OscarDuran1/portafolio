@@ -9,19 +9,25 @@
   },
   "home": {
     "title": "La fotografía es capturar momentos, preservar recuerdos y contar historias.",
-    "gallery_title": "Galería"
+    "gallery_title": "Galería",
+    "seo_title": "Portafolio de Fotografía Profesional",
+    "seo_description": "Explora el portafolio de fotografía de Oscar Durán, especializado en fotografía documental, arquitectónica y de paisajes."
   },
   "about": {
     "title": "Sobre mí",
     "p1": "¡Hola! Soy Oscar Durán, un fotógrafo apasionado por capturar la belleza en los detalles cotidianos. Mi viaje en la fotografía comenzó hace más de una década, y desde entonces, no he dejado de explorar el mundo a través de mi lente.",
     "p2": "Me especializo en fotografía documental y de arquitectura, buscando siempre la historia que se esconde detrás de cada escena. Creo que una buena fotografía no solo muestra cómo se ve algo, sino cómo se siente.",
-    "p3": "Este portafolio es una colección de momentos que me han conmovido, y espero que a ti también te inspiren."
+    "p3": "Este portafolio es una colección de momentos que me han conmovido, y espero que a ti también te inspiren.",
+    "seo_title": "Sobre el Fotógrafo",
+    "seo_description": "Conoce más sobre Oscar Durán, su trayectoria en la fotografía y su visión artística."
   },
   "contact": {
     "title": "Contacto",
     "p1": "¿Interesado en colaborar o tienes alguna pregunta sobre mi trabajo? Me encantaría saber de ti.",
     "p2": "Puedes contactarme a través de mi correo electrónico:",
-    "p3": "También puedes seguirme en mis redes sociales:"
+    "p3": "También puedes seguirme en mis redes sociales:",
+    "seo_title": "Ponte en Contacto",
+    "seo_description": "Contacta a Oscar Durán para colaboraciones, consultas o más información sobre su trabajo fotográfico."
   },
   "categories": {
     "all": "Todos",
