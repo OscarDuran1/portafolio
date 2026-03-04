@@ -49,46 +49,46 @@
       "title": "photo_titles.doc_12"
     }
   ],
-  "retrato": [
+  "arquitectura": [
     {
-      "src": "img/retrato/foto1.webp",
-      "title": "photo_titles.port_1"
+      "src": "img/arquitectura/foto1.webp",
+      "title": "photo_titles.arch_1"
     },
     {
-      "src": "img/retrato/foto2.webp",
-      "title": "photo_titles.port_2"
+      "src": "img/arquitectura/foto2.webp",
+      "title": "photo_titles.arch_2"
     },
     {
-      "src": "img/retrato/foto3.webp",
-      "title": "photo_titles.port_3"
+      "src": "img/arquitectura/foto3.webp",
+      "title": "photo_titles.arch_3"
     },
     {
-      "src": "img/retrato/foto4.webp",
-      "title": "photo_titles.port_4"
+      "src": "img/arquitectura/foto4.webp",
+      "title": "photo_titles.arch_4"
     },
     {
-      "src": "img/retrato/foto5.webp",
-      "title": "photo_titles.port_5"
+      "src": "img/arquitectura/foto5.webp",
+      "title": "photo_titles.arch_5"
     },
     {
-      "src": "img/retrato/foto6.webp",
-      "title": "photo_titles.port_6"
+      "src": "img/arquitectura/foto6.webp",
+      "title": "photo_titles.arch_6"
     },
     {
-      "src": "img/retrato/foto7.webp",
-      "title": "photo_titles.port_7"
+      "src": "img/arquitectura/foto7.webp",
+      "title": "photo_titles.arch_7"
     },
     {
-      "src": "img/retrato/foto8.webp",
-      "title": "photo_titles.port_8"
+      "src": "img/arquitectura/foto8.webp",
+      "title": "photo_titles.arch_8"
     },
     {
-      "src": "img/retrato/foto9.webp",
-      "title": "photo_titles.port_9"
+      "src": "img/arquitectura/foto9.webp",
+      "title": "photo_titles.arch_9"
     },
     {
-      "src": "img/retrato/foto10.webp",
-      "title": "photo_titles.port_10"
+      "src": "img/arquitectura/foto10.webp",
+      "title": "photo_titles.arch_10"
     }
   ],
   "paisaje": [
@@ -133,46 +133,46 @@
       "title": "photo_titles.land_10"
     }
   ],
-  "arquitectura": [
+  "retrato": [
     {
-      "src": "img/arquitectura/foto1.webp",
-      "title": "photo_titles.arch_1"
+      "src": "img/retrato/foto1.webp",
+      "title": "photo_titles.port_1"
     },
     {
-      "src": "img/arquitectura/foto2.webp",
-      "title": "photo_titles.arch_2"
+      "src": "img/retrato/foto2.webp",
+      "title": "photo_titles.port_2"
     },
     {
-      "src": "img/arquitectura/foto3.webp",
-      "title": "photo_titles.arch_3"
+      "src": "img/retrato/foto3.webp",
+      "title": "photo_titles.port_3"
     },
     {
-      "src": "img/arquitectura/foto4.webp",
-      "title": "photo_titles.arch_4"
+      "src": "img/retrato/foto4.webp",
+      "title": "photo_titles.port_4"
     },
     {
-      "src": "img/arquitectura/foto5.webp",
-      "title": "photo_titles.arch_5"
+      "src": "img/retrato/foto5.webp",
+      "title": "photo_titles.port_5"
     },
     {
-      "src": "img/arquitectura/foto6.webp",
-      "title": "photo_titles.arch_6"
+      "src": "img/retrato/foto6.webp",
+      "title": "photo_titles.port_6"
     },
     {
-      "src": "img/arquitectura/foto7.webp",
-      "title": "photo_titles.arch_7"
+      "src": "img/retrato/foto7.webp",
+      "title": "photo_titles.port_7"
     },
     {
-      "src": "img/arquitectura/foto8.webp",
-      "title": "photo_titles.arch_8"
+      "src": "img/retrato/foto8.webp",
+      "title": "photo_titles.port_8"
     },
     {
-      "src": "img/arquitectura/foto9.webp",
-      "title": "photo_titles.arch_9"
+      "src": "img/retrato/foto9.webp",
+      "title": "photo_titles.port_9"
     },
     {
-      "src": "img/arquitectura/foto10.webp",
-      "title": "photo_titles.arch_10"
+      "src": "img/retrato/foto10.webp",
+      "title": "photo_titles.port_10"
     }
   ]
 }
