@@ -1,0 +1,1 @@
+System.register(["./vendor-legacy-CRT0MX5G.js"],function(t,e){"use strict";var c,n;return{setters:[t=>{c=t.u,n=t.c}],execute:function(){t("u",({titleKey:t,descriptionKey:e})=>{const{t:r}=c();n.useEffect(()=>{const c=r(t);document.title=`${c} | Oscar Durán`;const n=document.querySelector('meta[name="description"]');n&&n.setAttribute("content",r(e))},[r,t,e])})}}});
