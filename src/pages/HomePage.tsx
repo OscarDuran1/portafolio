@@ -51,8 +51,10 @@ const HomePage: React.FC = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="container mx-auto px-6 py-16 text-center">
-        <h2 className="text-3xl md:text-4xl text-zinc-50">{t("home.title")}</h2>
+      <div className="container mx-auto px-6 py-20 text-center animate-fade-in">
+        <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-text-main transition-colors duration-300">
+          {t("home.title")}
+        </h2>
       </div>
 
       {/* Photo Gallery Section */}
@@ -65,7 +67,10 @@ const HomePage: React.FC = () => {
             <button
               key={category.id}
               onClick={() => setSelectedCategory(category.id)}
-              className={`px-4 py-2 rounded-md text-white transition-colors duration-300 ${selectedCategory === category.id ? "bg-cyan-500" : "bg-zinc-700 hover:bg-cyan-600"}`}
+              className={`px-6 py-2 rounded-full font-medium transition-all duration-300 border ${selectedCategory === category.id
+                  ? "bg-accent text-white border-accent shadow-lg shadow-accent/20"
+                  : "bg-transparent text-text-main border-zinc-500/30 hover:border-accent hover:text-accent"
+                }`}
             >
               {t(category.name)}
             </button>

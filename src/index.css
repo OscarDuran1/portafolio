@@ -6,17 +6,53 @@
     --font-sans: "Open Sans", sans-serif;    
     --font-title: "Roboto Condensed", sans-serif;
     --font-logo: "Ephesis", sans-serif;
+
+    /* Base Colors - Tailwind 4 variables */
+    --color-background: var(--bg-color);
+    --color-text-main: var(--text-color);
+    --color-accent: var(--accent-color);
+}
+
+:root {
+    --bg-color: #f8fafc; /* slate-50 */
+    --text-color: #0f172a; /* slate-900 */
+    --accent-color: #0891b2; /* cyan-600 */
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(0, 0, 0, 0.1);
+}
+
+.dark {
+    --bg-color: #09090b; /* zinc-950 */
+    --text-color: #f4f4f5; /* zinc-100 */
+    --accent-color: #22d3ee; /* cyan-400 */
+    --glass-bg: rgba(18, 18, 18, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.1);
 }
 
 body {
     font-family: var(--font-sans);
+    background-color: var(--color-background);
+    color: var(--color-text-main);
+    transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-title);
+}
+
+.glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
 }

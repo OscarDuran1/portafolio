@@ -1,13 +1,23 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
-import svgr from 'vite-plugin-svgr' 
+import svgr from 'vite-plugin-svgr'
 import legacy from '@vitejs/plugin-legacy'
 import sitemap from 'vite-plugin-sitemap'
 
 // https://vite.dev/config/
 export default defineConfig({
   base: '/portafolio/',
+  build: {
+    chunkSizeWarningLimit: 1000,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'react-router-dom'],
+        }
+      }
+    }
+  },
   plugins: [
     react(),
     tailwindcss(),

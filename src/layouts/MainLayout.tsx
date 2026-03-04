@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "../components/LanguageSwitcher";
 import AnalyticsTracker from "../components/AnalyticsTracker";
 import Logo from "../components/Logo";
+import ThemeToggle from "../components/ThemeToggle";
 
 const MainLayout: React.FC = () => {
   const location = useLocation();
@@ -37,9 +38,9 @@ const MainLayout: React.FC = () => {
   const getNavLinkClass = useCallback(({ isActive }: { isActive: boolean }) => {
     const baseClasses =
       "relative py-1 transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[2px] after:bg-cyan-400 after:transition-transform after:duration-300 after:origin-center";
-    const activeClasses = "text-cyan-400 after:scale-x-100";
+    const activeClasses = "text-accent after:scale-x-100";
     const inactiveClasses =
-      "text-white hover:text-cyan-400 after:scale-x-0 hover:after:scale-x-100";
+      "text-text-main hover:text-accent after:scale-x-0 hover:after:scale-x-100";
 
     return `${baseClasses} ${isActive ? activeClasses : inactiveClasses}`;
   }, []);
@@ -47,16 +48,16 @@ const MainLayout: React.FC = () => {
   return (
     <>
       <AnalyticsTracker />
-      <div className="min-h-screen bg-zinc-900 text-zinc-100 font-sans flex flex-col">
+      <div className="min-h-screen transition-colors duration-300 flex flex-col">
         {/* Header */}
-        <header className="backdrop-blur-sm sticky top-0 z-20 border-b border-zinc-700">
+        <header className="glass sticky top-0 z-20 border-b border-zinc-700/30">
           <nav className="container mx-auto px-6 py-2 flex justify-between items-center">
             {/* Izquierda: Logo */}
             <div className="flex-1 md:flex-none">
               <NavLink to="/" aria-label="Página de inicio">
                 <Logo
                   height={70}
-                  className="text-zinc-100 hover:text-zinc-400 transition-all duration-300"
+                  className="text-text-main hover:text-accent transition-all duration-300"
                 />
               </NavLink>
             </div>
@@ -85,12 +86,14 @@ const MainLayout: React.FC = () => {
             {/* Derecha: Switcher de idioma y Menú Móvil */}
             <div className="flex-1 md:flex-none flex justify-end items-center">
               {/* Switcher de Idioma Desktop */}
-              <div className="hidden md:block">
+              <div className="hidden md:flex items-center space-x-4">
+                <ThemeToggle />
                 <LanguageSwitcher />
               </div>
               {/* Botón Menú Móvil */}
-              <div className="md:hidden">
-                <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white focus:outline-none">
+              <div className="md:hidden flex items-center space-x-4">
+                <ThemeToggle />
+                <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-text-main focus:outline-none">
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     {isMenuOpen ? (
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
@@ -116,7 +119,7 @@ const MainLayout: React.FC = () => {
                     <NavLink
                       to="/"
                       onClick={() => setIsMenuOpen(false)}
-                      className={({ isActive }) => `text-lg transition-colors ${isActive ? "text-cyan-500" : "hover:text-cyan-400"}`}
+                      className={({ isActive }) => `text-lg transition-colors ${isActive ? "text-accent" : "hover:text-accent opacity-70"}`}
                       end
                     >
                       {t("nav.gallery")}
@@ -126,21 +129,12 @@ const MainLayout: React.FC = () => {
                     <NavLink
                       to="/about"
                       onClick={() => setIsMenuOpen(false)}
-                      className={({ isActive }) => `text-lg transition-colors ${isActive ? "text-cyan-500" : "hover:text-cyan-400"}`}
-                    >
-                      {t("nav.about")}
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      to="/contact"
-                      onClick={() => setIsMenuOpen(false)}
-                      className={({ isActive }) => `text-lg transition-colors ${isActive ? "text-cyan-500" : "hover:text-cyan-400"}`}
+                      className={({ isActive }) => `text-lg transition-colors ${isActive ? "text-accent" : "hover:text-accent opacity-70"}`}
                     >
                       {t("nav.contact")}
                     </NavLink>
                   </li>
-                  <li className="pt-4">
+                  <li className="pt-4 flex flex-col items-center gap-4">
                     <LanguageSwitcher />
                   </li>
                 </ul>
@@ -162,9 +156,9 @@ const MainLayout: React.FC = () => {
         </main>
 
         {/* Footer */}
-        <footer className="mt-auto">
-          <div className="container mx-auto px-6 py-4 text-center text-zinc-300">
-            <p>
+        <footer className="mt-auto border-t border-zinc-700/20">
+          <div className="container mx-auto px-6 py-8 text-center text-text-main opacity-60">
+            <p className="text-sm tracking-wide">
               &copy; {new Date().getFullYear()} Oscar Durán. {t("footer.rights")}
             </p>
           </div>
