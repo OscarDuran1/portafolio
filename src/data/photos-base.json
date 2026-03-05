@@ -1,4 +1,86 @@
 {
+  "calle": [
+    {
+      "src": "img/calle/foto1.webp",
+      "title": "photo_titles.calle_1"
+    },
+    {
+      "src": "img/calle/foto2.webp",
+      "title": "photo_titles.calle_2"
+    },
+    {
+      "src": "img/calle/foto3.webp",
+      "title": "photo_titles.calle_3"
+    },
+    {
+      "src": "img/calle/foto4.webp",
+      "title": "photo_titles.calle_4"
+    },
+    {
+      "src": "img/calle/foto5.webp",
+      "title": "photo_titles.calle_5"
+    },
+    {
+      "src": "img/calle/foto6.webp",
+      "title": "photo_titles.calle_6"
+    },
+    {
+      "src": "img/calle/foto7.webp",
+      "title": "photo_titles.calle_7"
+    },
+    {
+      "src": "img/calle/foto8.webp",
+      "title": "photo_titles.calle_8"
+    },
+    {
+      "src": "img/calle/foto9.webp",
+      "title": "photo_titles.calle_9"
+    },
+    {
+      "src": "img/calle/foto10.webp",
+      "title": "photo_titles.calle_10"
+    },
+    {
+      "src": "img/calle/foto11.webp",
+      "title": "photo_titles.calle_11"
+    },
+    {
+      "src": "img/calle/foto12.webp",
+      "title": "photo_titles.calle_12"
+    },
+    {
+      "src": "img/calle/foto13.webp",
+      "title": "photo_titles.calle_13"
+    },
+    {
+      "src": "img/calle/foto14.webp",
+      "title": "photo_titles.calle_14"
+    },
+    {
+      "src": "img/calle/foto15.webp",
+      "title": "photo_titles.calle_15"
+    },
+    {
+      "src": "img/calle/foto16.webp",
+      "title": "photo_titles.calle_16"
+    },
+    {
+      "src": "img/calle/foto17.webp",
+      "title": "photo_titles.calle_17"
+    },
+    {
+      "src": "img/calle/foto18.webp",
+      "title": "photo_titles.calle_18"
+    },
+    {
+      "src": "img/calle/foto19.webp",
+      "title": "photo_titles.calle_19"
+    },
+    {
+      "src": "img/calle/foto20.webp",
+      "title": "photo_titles.calle_20"
+    }
+  ],
   "documental": [
     {
       "src": "img/documental/foto1.webp",

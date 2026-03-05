@@ -17,7 +17,12 @@ const HomePage: React.FC = () => {
     descriptionKey: "home.seo_description"
   });
 
-  const filteredPhotos = selectedCategory === "all" ? photos : photos.filter((photo) => photo.category === selectedCategory);
+  const filteredPhotos =
+    selectedCategory === "all"
+      ? categories
+        .filter((cat) => cat.id !== "all")
+        .flatMap((cat) => photos.filter((p) => p.category === cat.id).slice(0, 5))
+      : photos.filter((photo) => photo.category === selectedCategory);
 
   const handlePhotoClick = (photo: Photo) => {
     setSelectedPhoto(photo);
