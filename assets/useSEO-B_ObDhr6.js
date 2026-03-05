@@ -1,1 +1,0 @@
-import{u as a,c as r}from"./vendor-Bg3hpyx4.js";const i=({titleKey:e,descriptionKey:s})=>{const{t}=a();r.useEffect(()=>{const c="Oscar Durán",n=t(e);document.title="".concat(n," | ").concat(c);const o=document.querySelector('meta[name="description"]');o&&o.setAttribute("content",t(s))},[t,e,s])};export{i as u};
